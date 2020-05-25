@@ -442,7 +442,7 @@ body{
     font-size: 27px;
 }
 }
-@media(min-width : 768px) and (max-width : 991px){
+@media(min-width : 768px){
 .up{
     padding: 10px;
     margin: 15px;
