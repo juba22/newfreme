@@ -97,41 +97,117 @@ body{
 
 /* Start Features */
 .features{
-    padding: 30px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
-.features .h1{
-    margin: 20px 0
-}
+
 .features .feat{
     margin-bottom: 30px;
 }
 .features p{
     margin: 7px;
     color: #949494;
-    line-height: 1.5
+    
 }
 @media(min-width : 992px){
     .features .feat{
         width: 33.3333%;
     }
+    .features .feat p{
+        font-size: 18px;
+        line-height: 1.3
+    }
 }
 @media(min-width : 768px) and (max-width : 991px){
+    .features .h1{
+        margin: 30px 0;
+        font-size: 40px;
+    }
     .features .feat:first-of-type{
         width: 100%;
+        line-height: 1.3;
+        font-size: 20px;
     }
     .features .feat:not(:first-of-type){
         width: 50%;
+        line-height: 1.3;
+        font-size: 20px;
     }
 }
 @media(max-width : 767px){
+    .features .h1{
+        margin: 20px 0;
+        font-size: 50px;
+    }
     .features .feat{
         float: none;
+        font-size: 25px;
+        line-height: 1.3
     }
 }
 
 /* End Features */
+
+/* Start Gallery */
+.gallary .image{
+    position: relative;
+}
+@media(max-width : 767px){
+    .gallary .image{
+        width: 100%;
+    }
+    .gallary .image .overlay{
+        line-height: 490px
+    }
+}
+@media(min-width : 768px){
+    .gallary .image{
+        width: 50%;
+    }
+    .gallary .image .overlay{
+        line-height: 390px
+    }
+}
+@media(min-width : 992px){
+    .gallary .image{
+        width: 33.3333%;
+    }
+    .gallary .image .overlay{
+        line-height: 370px
+    }
+}
+@media(min-width : 1200px){ /* larg size */
+    .gallary .image{
+        width: 25%;
+    }
+    .gallary .image .overlay{
+        line-height: 320px
+    }
+}
+.gallary .image .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #00a6f599;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    
+}
+.gallary .image:hover .overlay{
+    display: block
+}
+.gallary .image .overlay span{
+    border: 2px solid #fff;
+    padding: 6px 25px;
+    font-size: 30px;
+    color: #fff
+}
+/* End Gallery */
+
 
 /* Start About Us */
 
@@ -145,30 +221,6 @@ body{
 
 /* End About Us */
 
-/* Start Gallery */
-
-@media(max-width : 767px){ /* larg size */
-    .gallary .image{
-        width: 100%;
-    }
-}
-@media(min-width : 768px){ /* larg size */
-    .gallary .image{
-        width: 50%;
-    }
-}
-@media(min-width : 992px){ /* larg size */
-    .gallary .image{
-        width: 33.3333%;
-    }
-}
-@media(min-width : 1200px){ /* larg size */
-    .gallary .image{
-        width: 25%;
-    }
-}
-
-/* End Gallery */
 
 /* Start Pricing */
 .pricing{
@@ -366,6 +418,21 @@ body{
 }
 
 /* End Footer */
+
+/* Start Button To Up */
+.up{
+    padding: 10px;
+    background: #333;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    display: none
+}
+/* End Button To Up */
 
 @media(max-width : 767px){ /* mobile & tablt size */
     .container{
