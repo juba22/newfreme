@@ -13,13 +13,13 @@ body{
 /* Start Header */
 
 .header{
-    background-image: url(../images/header.jpg);
-    -webkit-background-size : cover;
-    -moz-background-size : cover;
-    background-size : cover;
-    min-height: 500px;
+    min-height: 600px;
     color: #fff;
     position: relative
+}
+#particles-js{
+    background: #000;
+    height: 600px;
 }
 .header .overlay{
     position: absolute;
@@ -27,11 +27,12 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(7, 163, 255, 0.46)
+    padding-top: 40px;
 }
 .header .overlay h1{
-    padding: 50px 0;
+    padding: 60px 0;
     font-size: 50px;
+    color: rgba(51, 51, 255, 0.5)
 }
 .header .overlay .plan{
     border: 2px solid #fff;
@@ -230,6 +231,7 @@ body{
 }
 .pricing .h1{
     margin-bottom: 35px;
+    color: #fff
 }
 .pricing .plan{
     border: 2px solid #fff;
@@ -518,7 +520,8 @@ body{
     float: right
 }
 .h1{
-    font-size: 2em
+    font-size: 3em;
+    color: #333
 }
 .responsive-paragraph{
     line-height: 1.7;
