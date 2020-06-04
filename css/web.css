@@ -101,7 +101,9 @@ body{
     padding: 70px 0;
     text-align: center;
 }
-
+.features .h2{
+    color: #1a1a80
+}
 
 .features .feat{
     margin-bottom: 30px;
